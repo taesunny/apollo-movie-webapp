@@ -13,10 +13,12 @@ var _apolloBoost = require("apollo-boost");
 
 var _reactHooks = require("@apollo/react-hooks");
 
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  query getMovie($id: Int!) {\n    movie(id: $id) {\n      id\n      title\n      medium_cover_image\n      description_intro\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  query getMovie($id: Int!) {\n    movie(id: $id) {\n      title\n      medium_cover_image\n      language\n      rating\n      description_intro\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
